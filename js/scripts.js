@@ -1,10 +1,13 @@
 //business logic
 var symbols = ["I", "V", "X", "L", "C", "D", "M"];
 var valueToSymbol = function(number) {
-  if (number === 1){
-  return "I";
-  }
-  // if (number )
+
+  if (number > 0 && number < 4){
+    var repeatString = "I"
+    var repeatedNumeral = repeatString.repeat(number)
+    return repeatedNumeral;
+}
+
 };
 
 //user interface logic
